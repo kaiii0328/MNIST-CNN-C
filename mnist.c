@@ -24,7 +24,7 @@ ImgArr read_aImg(const char* filename){
 	
 	//initialization
 	int i,r,c,offset;
-	// ͼ������ĳ�ʼ��?
+	// init image array
 	ImgArr imgarr=(ImgArr)malloc(sizeof(struct MnistImgArr));
 	imgarr->ImgNum=number_of_images;
 	imgarr->ImgPtr=(MnistImg*)malloc(sizeof(struct MnistImg));
@@ -111,7 +111,7 @@ ImgArr read_Img(const char* filename) // read images
 	return imgarr;
 }
 
-LabelArr read_Lable(const char* filename)// ����ͼ��
+LabelArr read_Lable(const char* filename)//read picture label
 {
 	FILE  *fp=NULL;
 	fp=fopen(filename,"rb");

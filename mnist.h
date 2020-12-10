@@ -38,6 +38,6 @@ LabelArr read_Lable(const char* filename); //读入图像标记
 ImgArr read_Img(const char* filename); // 读入图像
 ImgArr read_aImg(const char* filename); //读入待预测的图像
 
-void save_Img(ImgArr imgarr,char* filedir); // ��ͼ�����ݱ�����ļ�
+void save_Img(ImgArr imgarr,char* filedir); //保存图片
 
 #endif
